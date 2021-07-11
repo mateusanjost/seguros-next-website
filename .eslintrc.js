@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'galex',
+  extends: '',
   rules: {
     'new-cap': 'off',
   },
