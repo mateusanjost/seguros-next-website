@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
   BookmarkAltIcon,
@@ -14,11 +14,11 @@ import {
   SupportIcon,
   ViewGridIcon,
   XIcon,
-  TruckIcon
+  TruckIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
-import { useSession } from "next-auth/client";
-import { A } from '@/components';
+import { signIn, signOut, useSession } from "next-auth/client";
+import { A } from "@/components";
 
 const solutions = [
   {
@@ -96,8 +96,9 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Header(auth: any) {
+export default function Header() {
   const [session, loading] = useSession();
+
   return (
     <Popover className="relative bg-white">
       {({ open }) => (
@@ -207,7 +208,7 @@ export default function Header(auth: any) {
                   Quem somos
                 </a>
                 <a
-                  href="#"
+                  href="/contato"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   Fale conosco
@@ -215,10 +216,11 @@ export default function Header(auth: any) {
               </Popover.Group>
 
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                {session ? (
+                {!session ? (
                   <a
                     href="#"
                     className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+                    onClick={() => signIn()}
                   >
                     Entrar
                   </a>
@@ -226,6 +228,7 @@ export default function Header(auth: any) {
                   <a
                     href="#"
                     className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                    onClick={() => signOut()}
                   >
                     Sair
                   </a>
