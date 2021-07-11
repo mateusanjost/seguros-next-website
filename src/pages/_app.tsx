@@ -1,30 +1,30 @@
-import { SEO } from '@/constants/seo-constants'
-import ProgressBar from '@badrap/bar-of-progress'
-import { Provider } from 'next-auth/client'
-import { DefaultSeo } from 'next-seo'
-import Router from 'next/router'
-import { Fragment } from 'react'
-import { QueryClient, QueryClientProvider } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
+import { SEO } from "@/constants/seo-constants";
+import ProgressBar from "@badrap/bar-of-progress";
+import { Provider } from "next-auth/client";
+import { DefaultSeo } from "next-seo";
+import Router from "next/router";
+import { Fragment } from "react";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
-import type { AppProps } from 'next/app'
-import type { ReactNode } from 'react'
-import 'tailwindcss/tailwind.css'
-import '@/styles/globals.css'
+import type { AppProps } from "next/app";
+import type { ReactNode } from "react";
+import "tailwindcss/tailwind.css";
+import "@/styles/globals.css";
 
 const progress = new ProgressBar({
   size: 2,
-  color: '#22D3EE',
-  className: 'bar-of-progress',
+  color: "#22D3EE",
+  className: "bar-of-progress",
   delay: 100,
-})
+});
 
-Router.events.on('routeChangeStart', progress.start)
-Router.events.on('routeChangeComplete', () => {
-  progress.finish()
-  window.scrollTo(0, 0)
-})
-Router.events.on('routeChangeError', progress.finish)
+Router.events.on("routeChangeStart", progress.start);
+Router.events.on("routeChangeComplete", () => {
+  progress.finish();
+  window.scrollTo(0, 0);
+});
+Router.events.on("routeChangeError", progress.finish);
 
 const {
   DEFAULT_TITLE_TEMPLATE,
@@ -35,21 +35,19 @@ const {
   DEFAULT_OG_IMAGE,
   TWITTER_HANDLE,
   FAVICON_LINK,
-} = SEO
+} = SEO;
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 
-function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
-  const canonicalPath = router.pathname === '/' ? '' : router.pathname
-  const url = `${DEFAULT_CANONICAL}${canonicalPath}`
+function MyApp({ Component, pageProps, router }): JSX.Element {
+  const canonicalPath = router.pathname === "/" ? "" : router.pathname;
+  const url = `${DEFAULT_CANONICAL}${canonicalPath}`;
   const Layout =
-    (
-      Component as typeof Component & {
-        layoutProps: {
-          Layout: (props: { children: ReactNode } & unknown) => JSX.Element
-        }
-      }
-    ).layoutProps?.Layout || Fragment
+    (Component as typeof Component & {
+      layoutProps: {
+        Layout: (props: { children: ReactNode } & unknown) => JSX.Element;
+      };
+    }).layoutProps?.Layout || Fragment;
   return (
     <>
       <DefaultSeo
@@ -58,8 +56,8 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         description={DEFAULT_DESCRIPTION}
         canonical={url}
         openGraph={{
-          type: 'website',
-          locale: 'en_US',
+          type: "website",
+          locale: "en_US",
           url,
           site_name: SITE_NAME,
           title: SITE_NAME,
@@ -74,11 +72,11 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         twitter={{
           handle: TWITTER_HANDLE,
           site: TWITTER_HANDLE,
-          cardType: 'summary_large_image',
+          cardType: "summary_large_image",
         }}
         additionalLinkTags={[
           {
-            rel: 'shortcut icon',
+            rel: "shortcut icon",
             href: FAVICON_LINK,
           },
         ]}
@@ -92,7 +90,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         </Provider>
       </QueryClientProvider>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
