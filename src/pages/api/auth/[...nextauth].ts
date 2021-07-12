@@ -18,6 +18,7 @@ export default NextAuth({
       server: env.EMAIL_SERVER,
       from: env.EMAIL_FROM,
     }),
+    
     Providers.GitHub({
       clientId: env.GITHUB_ID,
       clientSecret: env.GITHUB_SECRET,

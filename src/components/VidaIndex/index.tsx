@@ -28,7 +28,7 @@ function IndexPage() {
           <div className="">
             <img
               className="w-full lg:-ml-16 xl:-ml-44"
-              src="https://cdn.tuk.dev/assets/templates/prodify/desktop.png"
+              src="https://andrebona.com.br/wp-content/uploads/2021/06/Seguro-de-vida-como-funciona-e-quando-vale-a-pena-1.png"
               alt=""
             />
           </div>

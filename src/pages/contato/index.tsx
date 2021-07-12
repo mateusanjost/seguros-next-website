@@ -2,12 +2,10 @@ import Header from "@/components/Header";
 import { NextSeo } from "next-seo";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { useState } from "react";
-
-export default function Home(): JSX.Element {
+export default function Contato(props): JSX.Element {
   return (
     <>
-      <NextSeo title="Home" />
+      <NextSeo title="Contato" />
       <Header />
       <Contact />
       <Footer />
@@ -15,7 +13,7 @@ export default function Home(): JSX.Element {
   );
 }
 
-Home.layoutProps = {
+Contato.layoutProps = {
   Layout: (props: unknown) => (
     <div className="border-l-8 border-blue-700" {...props} />
   ),

@@ -299,7 +299,7 @@ export default function Header() {
                     </a>
 
                     <a
-                      href="#"
+                      href="/contato"
                       className="text-base font-medium text-gray-900 hover:text-gray-700"
                     >
                       Fale conosco
