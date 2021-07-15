@@ -29,7 +29,7 @@ export default function SimulateSection() {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Faça a simulação gratuitamente e</span>{" "}
-                <span className="block text-red-600 xl:inline">
+                <span className="block text-blue-600 xl:inline">
                   contrate online
                 </span>
               </h1>
@@ -42,7 +42,7 @@ export default function SimulateSection() {
                 <div className="rounded-md shadow">
                   <a
                     href="/simulations/vidaIndividual"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
                   >
                    SIMULAR
                   </a>
@@ -50,7 +50,7 @@ export default function SimulateSection() {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
                   >
                     Mais informações
                   </a>

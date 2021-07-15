@@ -27,7 +27,7 @@ export default function Contact() {
                       business success
                     </h2>
                     <div className="mt-4 md:mt-8">
-                      <h2 className="text-sm md:text-base text-red-700 font-semibold">
+                      <h2 className="text-sm md:text-base text-blue-700 font-semibold">
                         Address
                       </h2>
                       <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
@@ -35,7 +35,7 @@ export default function Contact() {
                       </h2>
                     </div>
                     <div className="mt-4 md:mt-8">
-                      <h2 className="text-sm md:text-base text-red-700 font-semibold">
+                      <h2 className="text-sm md:text-base text-blue-700 font-semibold">
                         Contact
                       </h2>
                       <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
@@ -46,7 +46,7 @@ export default function Contact() {
                       </h2>
                     </div>
                     <div className="mt-4 md:mt-8">
-                      <h2 className="text-sm md:text-base text-red-700 font-semibold">
+                      <h2 className="text-sm md:text-base text-blue-700 font-semibold">
                         Email
                       </h2>
                       <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
@@ -59,7 +59,7 @@ export default function Contact() {
             </div>
             <div className="w-full lg:w-1/2   xl:pt-10 lg:pl-24">
               <div className="flex flex-col items-start xl:justify-start 2xl:justify-end xl:px-0 px-4">
-                <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-wider text-red-700">
+                <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-wider text-blue-700">
                   Let’s Talk
                 </h1>
                 <div className="w-full 2xl:w-8/12 mt-3">
@@ -69,7 +69,7 @@ export default function Contact() {
                   <div className="mt-4 md:mt-8">
                     <p className="text-gray-800 text-base font-medium">Name</p>
                     <input
-                      className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-red-600 focus:border-red-600 focus:outline-none border-black py-5 pl-4 text-gray-800"
+                      className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-blue-600 focus:border-blue-600 focus:outline-none border-black py-5 pl-4 text-gray-800"
                       type="text"
                       placeholder="Justin Timberlake"
                     />
@@ -79,7 +79,7 @@ export default function Contact() {
                       Email Address
                     </p>
                     <input
-                      className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-red-600 focus:border-red-600 focus:outline-none border-black py-5 pl-4 text-gray-800"
+                      className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-blue-600 focus:border-blue-600 focus:outline-none border-black py-5 pl-4 text-gray-800"
                       type="email"
                       placeholder="example@mail.com"
                     />
@@ -89,7 +89,7 @@ export default function Contact() {
                       Message
                     </p>
                     <textarea
-                      className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 resize-none hover:border-red-600 focus:border-red-600 focus:outline-none border-black xl:h-40 py-5 pl-4 text-gray-800"
+                      className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 resize-none hover:border-blue-600 focus:border-blue-600 focus:outline-none border-black xl:h-40 py-5 pl-4 text-gray-800"
                       placeholder="Write us something..."
                       defaultValue={""}
                     />

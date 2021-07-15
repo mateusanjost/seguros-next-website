@@ -21,7 +21,7 @@ function IndexPage() {
               <h2>Lorem ipsum dolor.</h2>
               <h2> Lorem ipsum dolor.</h2>
             </div>
-            <button className="hover:opacity-90 text-xl w-full xl:text-3xl xl:w-10/12 mt-4 xl:mt-11 f-f-r py-6 bg-red-700 text-white text-bold">
+            <button className="hover:opacity-90 text-xl w-full xl:text-3xl xl:w-10/12 mt-4 xl:mt-11 f-f-r py-6 bg-blue-700 text-white text-bold">
               Contratar agora
             </button>
           </div>
