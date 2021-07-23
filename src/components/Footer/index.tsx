@@ -12,28 +12,28 @@ const Footer = () => {
                 <div className="w-full lg:w-1/2 px-6">
                   <ul>
                     <li>
-                      <Link href="javascript:void(0)">
+                      <Link href="#">
                         <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
                           Paranhos
                         </a>
                       </Link>
                     </li>
                     <li className="mt-6">
-                      <Link href="javascript:void(0)">
+                      <Link href="#">
                         <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
                         Paranhos
                         </a>
                       </Link>
                     </li>
                     <li className="mt-6">
-                      <Link href="javascript:void(0)">
+                      <Link href="#">
                         <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
                         Paranhos
                         </a>
                       </Link>
                     </li>
                     <li className="mt-6">
-                      <Link href="javascript:void(0)">
+                      <Link href="#">
                         <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
                         Paranhos
                         </a>
@@ -41,7 +41,7 @@ const Footer = () => {
                     </li>
                     <li className="mt-6">
                       <a
-                        href="javascript:void(0)"
+                        href="#"
                         className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
                       >
                         Paranhos
@@ -52,7 +52,7 @@ const Footer = () => {
                 <div className="w-full lg:w-1/2 px-6">
                   <ul>
                     <li>
-                      <Link href="javascript:void(0)">
+                      <Link href="#">
                         <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
                         Paranhos
                         </a>
@@ -60,14 +60,14 @@ const Footer = () => {
                     </li>
 
                     <li className="mt-6">
-                      <Link href="javascript:void(0)">
+                      <Link href="#">
                         <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
                         Paranhos
                         </a>
                       </Link>
                     </li>
                     <li className="mt-6">
-                      <Link href="javascript:void(0)">
+                      <Link href="#">
                         <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
                         Paranhos
                         </a>
@@ -81,14 +81,14 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="javascript:void(0)"
+                        href="#"
                         className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
                       >
                       Paranhos
                       </a>
                     </li>
                     <li className="mt-6">
-                      <Link href="javascript:void(0)">
+                      <Link href="#">
                         <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
                         Paranhos
                         </a>
@@ -98,7 +98,7 @@ const Footer = () => {
                 </div>
                 <div className="w-full lg:w-1/2 px-6 flex flex-col justify-between">
                   <div className="flex items-center mb-6">
-                    <a href="javascript:void(0)">
+                    <a href="#">
                       <div className="text-gray-800 dark:text-gray-50 cursor-pointer hover:text-brand dark:hover:text-brand ">
                         <svg
                           className="footer-icon feather feather-github"
@@ -116,7 +116,7 @@ const Footer = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)">
+                    <a href="#">
                       <div className="pl-4">
                         <svg
                           className="footer-icon feather feather-twitter text-gray-800 dark:text-gray-50 cursor-pointer hover:text-brand dark:hover:text-brand "

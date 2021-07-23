@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-function PriceSimulator() {
+function PriceSimulator(this: any) {
   return (
     <>
       <div className="mx-auto container px-4 xl:px-0 pt-16 lg:pt-36">
