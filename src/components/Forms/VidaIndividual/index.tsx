@@ -2,7 +2,7 @@ import React from "react";
 const FormVidaIndividual = () => {
   return (
     <div
-      className="bg-gray-200 dark:bg-gray-900 flex md:flex-col items-center justify-center"
+      className="bg-gray-200 dark:bg-gray-900 flex flex-col items-center justify-center"
       style={{ fontFamily: '"Lato", sans-serif' }}
     >
       <div className="flex md:flex-row flex-col items-center py-8 px-4">

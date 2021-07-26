@@ -21,7 +21,7 @@ export default function Contato(props: any): JSX.Element {
               <Step2 />
             </StepWizard>
           </div>
-          <div className="dark:border-gray-700  border-t lg:border-t-0 lg:border-r lg:border-l lg:rounded-r dark:bg-gray-700 bg-gray-100 md:w-100 bg-none">
+          <div className="dark:border-gray-700  border-t lg:border-t-0 lg:border-r lg:border-l lg:rounded-r dark:bg-gray-700 bg-gray-100 lg:w-auto w-full 0 bg-none">
             {" "}
             <PriceSimulator />
           </div>
