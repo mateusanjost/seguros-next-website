@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-function PriceSimulator(this: any) {
+function PriceSimulator(props) {
   return (
     <>
       <div className="mx-auto container px-4 xl:px-0 pt-16 lg:pt-36">
@@ -10,7 +10,7 @@ function PriceSimulator(this: any) {
                 <h1 className="f-f-l font-black text-color text-4xl lg:text-7xl">
                   R$29
                 </h1>
-                <button className="py-4 px-4 xl:px-10 bg-gray-100 focus:outline-none f-f-r text-xl font-bold text-color mt-7">
+                <button  className="py-4 px-4 xl:px-10 bg-gray-100 focus:outline-none f-f-r text-xl font-bold text-color mt-7">
                   Contratar agora
                 </button>
               </div>

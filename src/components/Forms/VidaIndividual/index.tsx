@@ -718,7 +718,7 @@ const FormVidaIndividual = () => {
         {/* Code block ends */}
       </div>
 
-      <p><button>Next Step</button></p>
+ 
    
     </div>
   );

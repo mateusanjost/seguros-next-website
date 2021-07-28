@@ -33,6 +33,6 @@
     "**/*.ts",
     "**/*.tsx",
     "src/adapters/fauna/index.js"
-, "src/utils/modelPageRoute"  ],
+, "src/utils/modelPageRoute", "src/pages/simulations/vidaIndividual/index.tsx"  ],
   "exclude": ["node_modules"]
 }
