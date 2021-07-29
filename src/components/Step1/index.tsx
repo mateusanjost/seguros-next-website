@@ -1,6 +1,6 @@
 import React from "react";
 import FormVidaIndividual from "../Forms/VidaIndividual/index";
-import PriceSimulator from "../PriceSimulator";
+
 function Step1(this: any, props: any) {
   return (
     <>
@@ -27,41 +27,39 @@ function Step1(this: any, props: any) {
 
       <div className="w-11/12 lg:w-full mx-auto">
         <div className="bg-gray-200 h-1 flex items-center justify-between">
-          <div className="w-1/3 bg-white-700 h-1 flex items-center">
-            <div className="bg-white h-6 w-6 rounded-full shadow flex items-center justify-center -mr-3 relative">
-              <div className="h-3 w-3 bg-blue-700 rounded-full" />
-            </div>
-            <div className="flex items-center justify-center -mr-3 relative">
-              <div className="relative  bg-white shadow-lg px-2 py-1 rounded mt-16 -mr-12">
-                <p className="text-blue-700 text-xs font-bold">
-                  Passo 1: Simulação
-                </p>{" "}
-              </div>
-            </div>
-          </div>
-
-          <div className="w-1/3 flex justify-between bg-white-700 h-1 items-center relative">
-            <div className="w-1/3 flex justify-end">
-              <div className="bg-white h-6 w-6 rounded-full shadow" />
-            </div>
-
-            <div className="w-1/3 flex justify-end">
-              <div className="bg-white h-6 w-6 rounded-full shadow" />
+          <div className="w-1/3 bg-indigo-700 h-1 flex items-center">
+            <div className="bg-indigo-700 h-6 w-6 rounded-full shadow flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon icon-tabler icon-tabler-check"
+                width={18}
+                height={18}
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="#FFFFFF"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <path d="M5 12l5 5l10 -10" />
+              </svg>
             </div>
           </div>
-
-          <div className="w-1/3 flex justify-end">
+          <div className="w-1/3 flex justify-start">
+            <div className="bg-white h-6 w-6 rounded-full shadow" />
+          </div>
+          <div className="w-1/3 flex justify-start">
             <div className="bg-white h-6 w-6 rounded-full shadow" />
           </div>
         </div>
       </div>
-     
+
       <div className="flex justify-evenly w-full pt-20">
         <div className="pt-20">
           <FormVidaIndividual />
         </div>
-       
-        
+
         <div className="p-5  dark:border-gray-700  border-t lg:border-t-0 lg:border-r lg:border-l lg:rounded-r dark:bg-gray-700 bg-gray-100 lg:w-auto w-full 0 bg-none">
           {" "}
           <div className="mx-auto container px-4 xl:px-0 pt-16 lg:pt-36">
@@ -88,8 +86,7 @@ function Step1(this: any, props: any) {
             </div>
           </div>
         </div>
-      
-        </div>
+      </div>
     </>
   );
 }
