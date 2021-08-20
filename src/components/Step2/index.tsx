@@ -52,7 +52,7 @@ function Step2(props) {
         </div>
       </div>
 
-      <div className="pt-20">
+      <div className="pt-20 flex justify-evenly w-full pt-20">
       {!session ? (
                   <a
                     href="#"
@@ -62,7 +62,7 @@ function Step2(props) {
                     Entrar
                   </a>
                 ) : (
-                  <div>
+                  <>
                   <a
                     href="#"
                     className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
@@ -70,13 +70,15 @@ function Step2(props) {
                   >
                     Sair
                   </a>
-                  <button onClick={props.nextStep}>Próxima etapa</button>
-                  </div>
+          
+                  </>
                 )}
 
-
+<button     className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+                   onClick={props.nextStep}>Próxima etapa</button>
                 
-      <button onClick={props.previousStep}>Etapa anterior</button>
+      <button    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+                   onClick={props.previousStep}>Etapa anterior</button>
     
       </div>
     </>

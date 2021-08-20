@@ -76,8 +76,12 @@ function Step3(props) {
 
       <div className="pt-20">
       <FormVidaIndividualPlus />
-      <button onClick={props.previousStep}>Previous Step</button>
-      <button onClick={props.nextStep}>Next Step</button>
+      <div className="pt-10 flex justify-evenly w-full pt-20">
+      <button    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+                   onClick={props.previousStep}>Etapa anterior</button>
+      <button    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+                   onClick={props.nextStep}>Próxima Etapa</button>
+      </div>
       </div>
 
       </div>
